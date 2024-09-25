@@ -35,7 +35,7 @@ st.sidebar.image(img, use_column_width=True)
     #     user_management.forgot_username_widget()
     
 
-st.write(f'## Bem-vindo, {st.session_state.name}!')
+st.write('Bem-vindo')
 st.write('''
         <div style="text-align: justify;">
         Este aplicativo foi desenvolvido para a análise de dados dos exames realizados e para a gestão do Programa de Controle de Qualidade dos equipamentos
