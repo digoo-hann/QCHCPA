@@ -19,7 +19,7 @@ st.set_page_config(page_title="Gerência de Controle de Qualidade", layout="wide
 img = Image.open('Logo_SFMR_Horizontal_Centralizado.png')
 st.sidebar.image(img, use_column_width=True)
 
-menu_with_redirect()
+
 
 uri = f"mongodb+srv://ledsouza:{st.secrets['MONGODB_PASSWORD']}@mnmanagement.opks2ne.mongodb.net/?retryWrites=true&w=majority"
 
