@@ -6,7 +6,7 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 
-from menu import menu_with_redirect
+
 from data_processing.stylized_table import StylizedCQ, styled_tests_need_to_do
 from data_processing.filters import filters_archivation, user_period_query
 from data_processing.plot_data import plot_indicadores
