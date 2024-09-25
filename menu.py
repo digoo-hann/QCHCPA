@@ -7,7 +7,7 @@ def authenticated_menu():
         st.sidebar.page_link("pages/users.py", label="Gerência de Usuários")
         st.sidebar.page_link("pages/bi_data.py", label="Análise de Dados do BI")
         st.sidebar.page_link("pages/cq_management.py", label="Gerência de Controle de Qualidade")
-        st.session_state['user_management'].logout_widget()
+        
 
 
 def unauthenticated_menu():
@@ -19,7 +19,7 @@ def menu():
     # Determine if a user is logged in or not, then show the correct
     # navigation menu
     if "authentication_status" not in st.session_state or st.session_state.authentication_status is False or st.session_state.authentication_status is None:
-        unauthenticated_menu()
+        authenticated_menu()
         return
     authenticated_menu()
 
